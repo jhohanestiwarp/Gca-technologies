@@ -3,6 +3,7 @@ GCA-TECHNOLOGIES
 La prueba técnica consistió en el desarrollo de una aplicación en Angular 17 que gestionara una plantilla de vendedores con vehículo asignado, llevando a cabo el seguimiento de los mismos mediante una API REST. Esta documentación detalla los aspectos clave del desarrollo realizado, así como las funcionalidades implementadas y los recursos utilizados.
 
 [![8.jpg](https://i.postimg.cc/1zdYdSk5/8.jpg)](https://postimg.cc/DWqgW9ft)
+[![5.jpg](https://i.postimg.cc/vZM3BhFy/5.jpg)](https://postimg.cc/bsCQVQwV)
 [![7.jpg](https://i.postimg.cc/T2VCVn3P/7.jpg)](https://postimg.cc/Z0q8ZB3k)
 [![6.jpg](https://i.postimg.cc/gkcq357M/6.jpg)](https://postimg.cc/DmDXTCns)
 [![9.jpg](https://i.postimg.cc/m2qzh5W1/9.jpg)](https://postimg.cc/3dXJc9R3)
