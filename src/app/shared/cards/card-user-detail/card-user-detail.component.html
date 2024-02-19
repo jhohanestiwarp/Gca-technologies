@@ -1,0 +1,50 @@
+<div
+  class="hover:bg-white hover:shadow-lg hover:cursor-pointer shadow-gray-400 flex items-center justify-between px-4 py-5 mr-1 rounded-xl relative"
+  [ngClass]="saleManSelected?.id === saleMan.id ? 'bg-white' : ''"
+>
+  <div class="w-5/12">
+    <div>
+      <h2 class="uppercase">{{ saleMan.name }}</h2>
+      <p class="text-sky-500">{{ saleMan.category }}</p>
+    </div>
+    <br />
+    <div>
+      <p class="text-sky-500 text-sm">
+        logitud = {{ saleMan.coordinates.longitude.toFixed(5) }}
+      </p>
+      <p class="text-sky-500 text-sm">
+        latitud = {{ saleMan.coordinates.latitude.toFixed(5) }}
+      </p>
+      <p class="text-sky-500 text-sm">
+        altitud = {{ saleMan.coordinates.height }}
+      </p>
+    </div>
+  </div>
+  <div class="w-7/12 flex items-end justify-end">
+    <div class="mr-5 flex flex-col items-end">
+      <p class="text-sky-500 text-sm">{{ saleMan.address }}</p>
+      <p class="mr-2">tipo de vehiculo</p>
+      <p
+        class="mr-2"
+        [ngClass]="saleMan.isActive ? 'text-green-400' : 'text-red-400'"
+      >
+        {{ saleMan.isActive ? "activo" : "inactivo" }}
+      </p>
+    </div>
+    <div class="relative">
+      <img
+        class="w-16 h-24 rounded-lg"
+        [src]="'/assets/images/' + validatePhoto(saleMan.photo)"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 right-11 transform translate-y-1/4 w-10 h-w-10 bg-green-400 dark:border-gray-800 rounded-full"
+        [src]="'/assets/icons/' + saleMan.vehicle + '.svg'"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+<div class="flex justify-center">
+  <span class="bg-gray-300 w-80 h-px"></span>
+</div>
